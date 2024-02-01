@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Solair</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="hero parent">
+        <div class="preloader">
+          <div class="spinner"></div>
+        </div>
+        <div class="header">
+          <a href="#">
+            <h1 class="logo">Solair</h1>
+          </a>
+          <div class="search-location parent">
+            <input type="text" id="searchBar" placeholder="Change Location...">
+            <div class="location-button">
+              <ion-icon name="locate-outline" class="location-b"></ion-icon>
+            </div>
+          </div>
+
+          <!-- <a class="overflow-hidden" href="{{ url_for('login') }}">
+            <h1 class="login-button">Login</h1>
+            <h1 class="login-button-hidden">Login</h1>
+          </a> -->
+
+        <label class="switch">
+            <input type="checkbox" id="darkModeToggle">
+            <span class="slider round"></span>
+        </label>
+
+        </div>
+        <div class="left-container parent">
+          <div class="top-row">
+            <div class="col c-one"></div>
+            <div class="col c-two">
+              <h1 class="location current-location">Iceland</h1>
+              <h1 class="main-temp current-temp">20°</h1>
+              <h1 class="main-condition condition">Cloudy</h1>
+            </div>
+            <div class="col c-three">
+              <div class="c-three-container-one">
+                <i class='bx bx-wind'></i>
+                <h1 class="wind current-wind">7.2 mph</h1>
+              </div>
+              <div class="c-three-container-two">
+                <i class='bx bx-cloud-light-rain' ></i>
+                <h1 class="rain current-rain">61%</h1>
+              </div>
+            </div>
+          </div>
+          <div class="bottom-row parent">
+            <div class="card c1">
+              <h1>Tomorrow</h1>
+              <h2 class="next-temp1">20°</h2>
+              <!--<i id="card-icon" class='bx bx-cloud'></i>-->
+              <h3 class="next-desc1">Cloudy</h3>
+            </div>
+            <div class="card c2">
+              <h1 class="second-day">Sunday</h1>
+              <h2 class="next-temp2">20°</h2>
+              <!--<i id="card-icon" class='bx bx-cloud'></i>-->
+              <h3 class="next-desc2">Cloudy</h3>
+            </div>
+            <div class="card c3">
+              <h1 class="third-day">Sunday</h1>
+              <h2 class="next-temp3">20°</h2>
+              <!--<i id="card-icon" class='bx bx-cloud'></i>-->
+              <h3 class="next-desc3">Cloudy</h3>
+            </div>
+            <div class="card c4">
+              <h1 class="fourth-day">Sunday</h1>
+              <h2 class="next-temp4">20°</h2>
+              <!--<i id="card-icon" class='bx bx-cloud'></i>-->
+              <h3 class="next-desc4">Cloudy</h3>
+            </div>
+          </div>
+        </div>
+        <div class="right-container parent">
+            <div class="col-head">
+                <div class="right-header">
+                  <h1 class="message">Good Morning</h1>
+                </div>
+                <h1 class="current-temp side-temp">20°</h1>
+                <h1 class="side-condition condition">Cloudy</h1>
+            </div>
+            <div class="hourly">
+                <h1 class="current-time">12:06pm</h1>
+                <h1 class="title-hourly">Hourly Forecast</h1>
+                <div class="hour-container">
+                  <h1 class="time1">6:47 AM</h1>
+                    <div class="micro-container">
+                      <h1 class="hour1">70</h1>
+                      <h1 class="rain1">
+                        <i id='small-rain' class='bx bx-cloud-light-rain' ></i>
+                        1%</h1>
+                    </div>
+                </div>
+                <div class="hour-container">
+                  <h1 class="time2">6:47 AM</h1>
+                    <div class="micro-container">
+                      <h1 class="hour2">70</h1>
+                      <h1 class="rain2">
+                        <i id='small-rain' class='bx bx-cloud-light-rain' ></i>
+                        1%</h1>
+                    </div>
+                </div>
+                <div class="hour-container">
+                  <h1 class="time3">6:47 AM</h1>
+                    <div class="micro-container">
+                      <h1 class="hour3">70</h1>
+                      <h1 class="rain3">
+                        <i id='small-rain' class='bx bx-cloud-light-rain' ></i>
+                        1%</h1>
+                    </div>
+                </div>
+                <div class="hour-container">
+                  <h1 class="time4">6:47 AM</h1>
+                    <div class="micro-container">
+                      <h1 class="hour4">70</h1>
+                      <h1 class="rain4">
+                        <i id='small-rain' class='bx bx-cloud-light-rain' ></i>
+                        1%</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+      <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+      <script src="script.js"></script>
+</body>
